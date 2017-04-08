@@ -6,6 +6,9 @@
     <header>
       <h1 itemprop="headline">{{ .Title }}</h1>
     </header>
+    {{ if .Description }}
+      <blockquote itemprop="description">{{ .Description }}</blockquote>
+    {{ end }}
     {{ range (where .Site.RegularPages "Section" "post").GroupByDate "2006" }}
     <h2>{{ .Key }}</h2>
     <ul>
