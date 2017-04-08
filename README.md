@@ -28,7 +28,7 @@
     <tbody>
       <tr>
         <td>Deceptive Simplicity</td>
-        <td>After Dark is a <a target="feature" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for <b>novice and advanced developers</b> alike. It advances using the "Code for today, not for tomorrow" philosophy of <abbr title="eXtreme Programming">XP</abbr>, and includes only what's necessary to create and run your site &ndash; nothing more.</td>
+        <td>After Dark is a <a target="feature" href="http://themes.gohugo.io/">Hugo theme</a>, making it a suitable starting point for <b>novice and advanced developers</b> alike. It advances using the "Code for today, not for tomorrow" philosophy of <abbr title="eXtreme Programming">XP</abbr> and includes only what's necessary to create and run your site &ndash; nothing more.</td>
       </tr>
       <tr>
         <td>Semantic Versioning</td>
@@ -40,11 +40,11 @@
       </tr>
       <tr>
         <td>Performance Optimized</td>
-        <td>Page content and styles <b>load in a single request</b> on all pages. External resources, if present, are loaded asynchronously, and only when necessary. This keeps pages zippy, and affords <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
+        <td>Page content and styles <b>load in a single request</b> on all pages. External resources, if present, are loaded asynchronously and only when necessary. This keeps pages zippy and affords <b>~1 second page loads over 2G</b> when hosted using a <abbr title="Content Delivery Network">CDN</abbr>.</td>
       </tr>
       <tr>
         <td>Vertical Scaling</td>
-        <td>After Dark is capable of generating <b>~1000 pages per second</b> thanks to <a target="feature" href="https://gohugo.io/">Hugo</a>, and is likely to become faster over time.</td>
+        <td>After Dark is capable of generating <b>~1000 pages per second</b> thanks to <a target="feature" href="https://gohugo.io/">Hugo</a> and is likely to become faster over time.</td>
       </tr>
       <tr>
         <td><a href="#seo-and-ux">Search Awareness</a></td>
@@ -72,7 +72,7 @@
       </tr>
       <tr>
         <td><a href="#table-of-contents">Table Of Contents</a></td>
-        <td>Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to locate information in larger documents, and are more likely to <i>deep link</i> to specific information on a page.</td>
+        <td>Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to locate information in larger documents and are more likely to <i>deep link</i> to specific information on a page.</td>
       </tr>
       <tr>
         <td>Analytics</td>
@@ -88,7 +88,7 @@
       </tr>
       <tr>
         <td><a href="#modification-dating">Modification Dating</a></td>
-        <td>Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified, and visually lifted upwards in chronological listings.</td>
+        <td>Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.</td>
       </tr>
       <tr>
         <td><a href="#syntax-highlighting">Syntax Highlighting</a></td>
@@ -96,7 +96,7 @@
       </tr>
       <tr>
         <td>Taxonomy Pages</td>
-        <td>Help users discover taxonomic content. After Dark automatically generates <b>taxonomy and taxonomy terms pages</b>, and links to them in post bylines.</td>
+        <td>Help users discover taxonomic content. After Dark automatically generates <b>taxonomy and taxonomy terms pages</b> and links to them in post bylines.</td>
       </tr>
       <tr>
         <td>Post Bylines</td>
@@ -247,7 +247,7 @@ related_content_limit = 5
 
 ### Table Of Contents
 
-Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents, and are more likely to deep to specific information on a page.
+Help users locate and share information on your site. By providing a <abbr title="Table Of Contents">TOC</abbr>, users will spend less time scrolling to location information in larger documents and are more likely to deep to specific information on a page.
 
 To automatically generate a TOC for a post based on the [page outline](https://gsnedders.html5.org/outliner/), add the following to your post front matter:
 
@@ -330,7 +330,7 @@ If no custom description is provided, After Dark will fallback to the descriptio
 
 Help user agents know when posts were last modified. To do so add `publishdate` to your page front matter and update `date` anytime you make an update to a post.
 
-Updates will be made visible to readers by surfacing content higher in your page and post listings, and by using visible callouts on content summaries. For robots, making this change will automatically update Schema Structured Data and Web feeds, as well as the `lastmod` setting in your `sitemap.xml` file.
+Updates will be made visible to readers by surfacing content higher in your page and post listings and by using visible callouts on content summaries. For robots, making this change will automatically update Schema Structured Data and Web feeds, as well as the `lastmod` setting in your `sitemap.xml` file.
 
 You can be specific and use a datetime (with timezone offset) like:
 
