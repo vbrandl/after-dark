@@ -2,7 +2,6 @@
   {{ partial "menu" . }}
 {{ end }}
 {{ define "main" }}
-  <article itemscope itemtype="http://schema.org/CreativeWork">
     <header>
       <h1 itemprop="headline">{{ .Title }}</h1>
     </header>
@@ -14,15 +13,22 @@
     <ul>
       {{ range .Pages }}
       <li>
-        <a href="{{ .Permalink }}" id="{{ .UniqueID }}" alt="{{ .Title }}">{{ .Title | markdownify }}</a>
-        <span class="muted">
-          {{ partial "post/meta" . }}
-        </span>
+        <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+          {{ template "_internal/schema.html" . }}
+          {{ if isset .Params "author" }}
+            <meta name="author" itemprop="author" content="{{ index .Params "author" }}" />
+          {{ else }}
+            <meta name="author" itemprop="author" content="{{ .Site.Params.author }}" />
+          {{ end }}
+          <a itemprop="url" href="{{ .Permalink }}" id="{{ .UniqueID }}" alt="{{ .Title }}"><span itemprop="headline">{{ .Title | markdownify }}</span></a>
+          <span class="muted">
+            {{ partial "post/meta" . }}
+          </span>
+        </article>
       </li>
       {{ end }}
     </ul>
     {{ end }}
-  </article>
 {{ end }}
 {{ define "footer" }}
   {{ partial "powered-by" . }}
